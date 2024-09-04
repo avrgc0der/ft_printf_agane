@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi <enoshahi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 13:47:34 by enoshahi          #+#    #+#             */
-/*   Updated: 2024/09/03 17:27:26 by enoshahi         ###   ########.fr       */
+/*   Updated: 2024/09/04 17:22:33 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_puthex(unsigned int num, char base)
+int	ft_puthex(unsigned long num, char base)
 {
 	char	*hex;
 	int		count;

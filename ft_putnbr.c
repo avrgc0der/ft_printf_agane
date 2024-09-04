@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi <enoshahi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 15:08:22 by enoshahi          #+#    #+#             */
-/*   Updated: 2024/09/03 17:23:12 by enoshahi         ###   ########.fr       */
+/*   Updated: 2024/09/04 17:38:02 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_putnbr(int num)
 			return (-1);
 		return (count + 1);
 	}
-	if (num > 10)
+	if (num > 9)
 		count = ft_putnbr(num / 10);
 	if (count == -1)
 		return (-1);

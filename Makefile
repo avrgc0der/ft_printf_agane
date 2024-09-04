@@ -2,13 +2,11 @@ NAME = libftprintf.a
 
 SRCS = ft_printf.c ft_concoct.c ft_putchar.c ft_puthex.c ft_putnbr.c ft_putptr.c ft_putstr.c ft_putusd.c
 
-REM = a.out
-
 OBJS = ${SRCS:.c=.o}
 
 CC = cc
 
-CFLAGS =  -g3 -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 all : ${NAME} build
 
@@ -44,7 +42,7 @@ clean :
 	rm -f ${OBJS}
 
 fclean : clean
-	rm -f ${NAME} ${REM}
+	rm -f ${NAME} 
 
 re : fclean all
 

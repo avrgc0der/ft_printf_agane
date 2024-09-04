@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putusd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi <enoshahi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 17:42:30 by enoshahi          #+#    #+#             */
-/*   Updated: 2024/09/03 17:27:48 by enoshahi         ###   ########.fr       */
+/*   Updated: 2024/09/04 17:38:09 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_putusd(unsigned int num)
 
 	count = 0;
 	str = "0123456789";
-	if (num > 15)
+	if (num > 9)
 		count = ft_putusd(num / 10);
 	if (count == -1)
 		return (-1);

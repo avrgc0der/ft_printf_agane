@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_concoct.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: enoshahi <enoshahi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: enoshahi < enoshahi@student.42abudhabi.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 15:48:45 by enoshahi          #+#    #+#             */
-/*   Updated: 2024/09/03 17:41:16 by enoshahi         ###   ########.fr       */
+/*   Updated: 2024/09/04 17:43:32 by enoshahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,8 @@ int	ft_concoct(va_list args, const char format)
 	if (format == 'X')
 		return (ft_puthex(va_arg(args, unsigned int), 'X'));
 	if (format == 'p')
-	{
-		write(1, "0x", 2);
 		return (ft_putptr(va_arg(args, unsigned long)));
-	}
 	if (format == '%')
 		return (ft_putchar('%'));
-	//! PUTPTR
 	return (-1);
 }
